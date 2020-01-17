@@ -1,0 +1,55 @@
+#
+# VERSION  $Date: 2016-06-06 08:21:27 -0700 (Mon, 06 Jun 2016) $ @(#) iiiconfig.sierra $Rev: 255948 $ @(#)
+# load with care
+# this is template for iiiconfig, it can be machine dependent
+#
+setenv IIIDEFX /iiidb/defx
+setenv FILEINFO /iiidb/fileinfo
+setenv DBNAME main
+setenv RLS 630
+setenv SHELL /bin/csh
+setenv SEMKEY 40
+setenv MALLOCLOOKUP yes
+setenv TPP /iiidb/software/tpp
+setenv SSLHOME /iiidb/software/tpp/sslhome
+setenv MYSQLHOME /iiidb/software/tpp/mysql
+setenv MYCNF --defaults-file=/iiidb/mysql/data/my.cnf
+setenv JCONTAINER_HOME /iiidb/software/tpp/tomcat7
+setenv XMLSOFTHOME /iiidb/software/tpp/xmlsofthome
+setenv ANT_HOME /iiidb/software/tpp/anthome
+setenv EXPECTHOME /iiidb/software/tpp/expecthome
+setenv JAVA_HOME /iiidb/software/tpp/JDK/160
+setenv JAVA6_HOME /iiidb/software/tpp/JDK/160
+setenv JAVA8_HOME /iiidb/software/tpp/JDK/180
+setenv LD_LIBRARY_PATH /iiidb/software/tpp/mysql/lib:/iiidb/software/tpp/lib:/iiidb/software/lib
+setenv SHARED_LIBS false
+setenv SCOPEMASK x
+setenv COVDBNAME coverage
+setenv SOFTWARE /iiidb/software
+setenv DEPLOY /iiidb/software/deploy
+# MONEYFMT is required for Sierra API v2.0. Using the default value
+# (quotes needed so $ is not interpreted)
+setenv MONEYFMT ',.2$'
+setenv XVFB_DISPLAY :10
+setenv III /iii
+setenv IIIDB /iiidb
+setenv TMPDIR /usr/tmp
+setenv MACHINE linux
+setenv IIIHOME /iii/iiihome
+setenv IIIROOT /iiiroot
+setenv PATH :/iiidb/software/deploy/bin:/iiidb/software/hm7:/iiidb/software/tpp/bin:/sbin:/bin:/usr/bin:/usr/local/bin:/usr/sbin
+setenv NODENAME devops-dkr
+setenv NODEROLES app,sda,rdbms,lucene,ds,backup
+setenv SITE devops-dkr
+setenv DATEFMT mdymo-dy-yr
+setenv RTSET 1
+setenv ACCTUNIT 0
+setenv LIBDIR /iiidb/software/lib
+setenv HM7 /iiidb/software/hm7
+setenv INCL /iiidb/software/incl
+setenv PINCL /iiidb/software/pincl
+setenv DAPPURL http://@SDAFQHOST@:64001/iiidb/software/applets
+setenv NCFTPHOME /iiidb/software/tpp/ncftphome
+setenv SSCEHOME /iiidb/software/tpp/ssce
+setenv LOGBUSYS b,o,c,a,i,p\|10000000
+setenv POSIXLY_CORRECT 1
