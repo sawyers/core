@@ -23,7 +23,7 @@ M2Crypto==0.21.1
 Mako==0.8.1
 MarkupSafe==0.11
 openlmi==0.5.0
-paramiko==2.1.1
+paramiko==2.1.6
 Paste==1.7.5.1
 ply==3.4
 pyasn1==0.4.8
