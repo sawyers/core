@@ -31,4 +31,5 @@ Identify more areas of self service automation. We have opsbot that does many se
 * Attach encore to arbitrary stack (longer process time to sync data, but otherwise may not be that complex)
 * Automated backup and restore (not snapshot) of ILS to allow 'profiles' of pet machines... Tricky in that the backup doesn't check for data conversion so could only be used on the same application version.
 * Automated security tests against products? Pen tests in aws are not as restrictive as they once were, maybe we should look at starting that process? https://aws.amazon.com/security/penetration-testing/
+* Add visibility to devops team work; both in unified automated reports but in having transparency to tickets resolved automatically. tasks automated away to fully auto or even self service should still generate tickets to record the work and that work should be published ( 500 tickets resolved automatically this quarter ).
 
