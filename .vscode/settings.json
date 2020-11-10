@@ -1,3 +1,11 @@
 {
-    "python.pythonPath": "/home/msawyers/.local/share/virtualenvs/learning-Z0iCHXc4/bin/python"
+    "python.pythonPath": "C:\\Users\\magic\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\learning-NRDsGjQU-py3.8\\Scripts\\python.exe",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88"
+    ],
 }
