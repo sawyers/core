@@ -221,6 +221,7 @@ def poly(sides, length):
 poly(5, 125)
 """
 
+
 """
 # -------------- Functions to organize code
 def main():
@@ -269,20 +270,121 @@ main()
 
 """
 # -------------- Built-in String functions
+# https://www.w3schools.com/python/python_ref_string.asp
 
 bobo = "HKJkj ksd fkKJHjk sdkjas"
-bobo.upper() # all upper
-bobo.lower() # all lower
-bobo.capitalize() # First cap rest lower
-bobo.title() # first letter of the each word cap
-bobo.strip() # Remove matching char, default space and returns list
-len(bobo) # how long
-bobo[0:5] # return range
-bobo[:-1] # last
-bobo.isupper() # is all upper
+bobo.upper()  # all upper
+bobo.lower()  # all lower
+bobo.capitalize()  # First cap rest lower
+bobo.title()  # first letter of the each word cap
+bobo.strip()  # Remove matching char, default space and returns list
+len(bobo)  # how long
+bobo[0:5]  # return range
+bobo[:-1]  # last
+bobo.isupper()  # is all upper
 bobo.startswith
 bobo.endswith
 bobo.isnumeric
 
-bobo.replace('a','b') # replace a with b
+bobo.replace("a", "b")  # replace a with b
 """
+
+"""
+# -------------- Lists
+a = []
+numbers = [1, 2, 3, 4, 5]
+letters = ["a", "b", "c", "d", "e"]
+letters[0] # "a"
+numbers[2] # 3
+letters + numbers # merge
+letters * 3 # repeast list 3x
+'b' in letters # returns true / false
+biglist = letters+numbers
+
+for item in biglist:
+    print (item)
+"""
+
+"""
+# -------------- List functions
+# https://www.w3schools.com/python/python_ref_list.asp
+
+numbers = [1, 2, 3, 4, 5]
+letters = ["a", "b", "c", "d", "e"]
+
+numbers.append(33)
+
+numbers.extend(letters)  # same as adding together
+
+numbers.pop  # return last element and remove from the list
+
+numbers.insert(4, "Anything")  # insert at index location
+
+# list numbers up to the limit that are prime
+limit = input("enter the upper limit: ")
+limit = int(limit)
+primes = []
+
+for num in range(2, limit + 1):
+    counter = 0
+    for i in range(1, num + 1):
+        if num % i == 0:
+            counter += 1
+    if counter == 2:
+        primes.append(num)
+
+print(primes)
+"""
+
+"""
+# -------------- dictionaries
+d = {}
+d["key"] = "value"
+d[4] = "four"
+d[5] = (1, 2, 3, 4)
+print(d)
+
+Jane = {}
+Jane["age"] = 29
+Jane["residence"] = "melbourne"
+Jane["height"] = 172
+print(Jane)
+"""
+
+"""
+# -------------- Applied dictionaries
+# Replace in text blocks using dictionaries
+text = open("sample-2mb-text-file.txt")
+text = text.read()
+text = text[0:5600]
+
+d = {}
+d["eiusmod"] = "--splunk--"
+d["penatibus"] = "--plumbus--"
+d["Habitant"] = "--Da House--"
+
+for key in d:
+    text = text.replace(key, d[key])
+
+print(text)
+"""
+
+# -------------- Logging
+import logging
+import os
+
+
+def event_log(event):
+    path = os.path.relpath(__file__)
+    dir_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    FORMAT = "%(asctime)-15s %(clientip)s %(user)-8s %(message)s"
+    log = logging.getLogger(__name__)
+    logging.basicConfig(format=FORMAT)
+    log.warning("Protocol problem: %s", "connection reset", extra=event)
+
+
+stage = "setup"
+outcome = "success"
+msg = "tested"
+event = {"clientip": "192.168.0.1", "user": "fbloggs"}
+event_log(event)
