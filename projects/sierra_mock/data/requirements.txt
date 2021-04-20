@@ -1,4 +1,4 @@
-ansible==2.6.20
+ansible==2.9.20
 awscli==1.17.1
 Babel==0.9.6
 backports.ssl-match-hostname==3.5.0.1
