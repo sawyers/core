@@ -1,8 +1,0 @@
-# Snippits / examples of commands that have been useful
-
-# Search for security groups with a specific IP 
-
-aws ec2 describe-security-groups \
---query 'SecurityGroups[?IpPermissions[?contains(IpRanges[].CidrIp, `66.150.245.190/32`)]].{GroupId: GroupId}' \
---output json \
---region us-west-1
