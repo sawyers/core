@@ -1,9 +1,5 @@
 # Ansible
 
-# AWS
-
-* [AWS Sysops Study Notes - 2019](AWS/aws_sysops/index.md)
-
 ## AWS FAQ's
 
 * [Config](https://aws.amazon.com/config/faq/)
